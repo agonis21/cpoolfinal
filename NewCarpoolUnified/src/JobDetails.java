@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.Scanner;
@@ -41,7 +42,6 @@ public class JobDetails implements ActionListener {
     private JTextField DurationText;
     private JTextField JobId;
     private JLabel JobIDLabel;
-    private JLabel UserIDLabel;
     private JTextField UserId;
     private JLabel SubmissionConfirmLabel;
     private JLabel JobCompletionLabel;
@@ -93,6 +93,8 @@ public class JobDetails implements ActionListener {
             Action details = fileChooser.getActionMap().get("viewTypeDetails");
             details.actionPerformed(null);
             fileChooser.showOpenDialog(null);
+            File[] files = fileChooser.getSelectedFiles();
+            System.out.println(files);
 
             //this section will store the files that the user
             //selected
@@ -113,7 +115,7 @@ public class JobDetails implements ActionListener {
             SubmissionConfirmLabel.setText("Submission Complete!");
 
             //Random randomizer = new Random();
-            int userID = Integer.parseInt(UserId.getText());
+            int userID = user.getUserID();
             int jobID = Integer.parseInt(JobId.getText());
             String jobType= JobType.getSelectedItem().toString();
             String deadline = DurationText.getText();
@@ -128,6 +130,14 @@ public class JobDetails implements ActionListener {
             System.out.println(userEntry);
             //System.out.println("Time of Submission:"+ LocalDateTime.now());
 
+
+            Job dummyJob = new Job(jobID,userID,jobType,deadline,duration);
+            try {
+                JobDBAccess.insert(dummyJob);
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+
             try {
                 SemClient sccc1 = new SemClient(userEntry);
             } catch (IOException ex) {
@@ -137,10 +147,16 @@ public class JobDetails implements ActionListener {
             }
 
 
+
+
+
+
             String content = "";
             // just reading and saving
 
-            Job dummyJob = new Job(jobID,userID,jobType,deadline,duration);
+
+
+
             try {
                 File myObj = new File("NewCarpoolUnified/src/db/" + "jobs.txt");
                 // Get the absolute path of file f
