@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            UserDBAccess.init();
+           // UserDBAccess.init();
             DummyUser presetDummy = new DummyUser("Joey", "balls");
             DummyUser presetDummy1 = new DummyUser("Steven", "password");
 
