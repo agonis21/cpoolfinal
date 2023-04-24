@@ -10,10 +10,12 @@ public class Main {
 
         try {
 
-            DummyUser presetDummy = new DummyUser("Joey", "balls");
-            Home homePage = new Home(presetDummy);
+//            DummyUser presetDummy = new DummyUser("Joey", "balls");
+//            Home homePage = new Home(presetDummy);
 
-//            UserDBAccess.init();
+            UserDBAccess.init();
+            VehicleDBAccess.init();
+            JobDBAccess.init();
 //            DummyUser presetDummy = new DummyUser("Joey", "balls");
 //            DummyUser presetDummy1 = new DummyUser("Steven", "password");
 //
@@ -25,7 +27,7 @@ public class Main {
 //            SignIn.users.add(presetDummy1);
 //
 //
-//            SignIn signInPage = new SignIn();
+            SignIn signInPage = new SignIn();
         }
         catch (Exception e) {
             e.printStackTrace();
