@@ -13,9 +13,9 @@ public class AdminVCC {
     private JToolBar Navbar;
     private JButton DiscButton;
     private JLabel logoLabel;
-    private JButton AcceptButton;
+    public JButton AcceptButton;
     public JLabel RequestInfo;
-    private JButton DeclineButton;
+    public JButton DeclineButton;
     private JButton VehicleButton;
     private JButton JobButton;
     private JButton UserButton;
@@ -45,20 +45,20 @@ public class AdminVCC {
         //this.server = server;
 
 
-        AcceptButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+//        AcceptButton.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
 //                server.isAccepted(true);
 //                server.respond();
-            }
-        });
-        DeclineButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+//            }
+//        });
+//        DeclineButton.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
 //                server.isAccepted(false);
 //                server.respond();
-            }
-        });
+//            }
+//        });
 
     }
    // @Override
@@ -225,6 +225,15 @@ public class AdminVCC {
     //throw new ArrayIndexOutOfBoundsException();
     }
 
+    }
+
+
+    public int showPopUp(){
+        int result = JOptionPane.showConfirmDialog(frame,"Accept?", "Decision",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE);
+
+        return result;
     }
 
 

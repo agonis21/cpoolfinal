@@ -142,7 +142,7 @@ public class JobDetails implements ActionListener {
 
             Job dummyJob = new Job(jobID,userID,jobType,deadline,duration);
             try {
-                File myObj = new File("src/db/" + "jobs.txt");
+                File myObj = new File("NewCarpoolUnified/src/db/" + "jobs.txt");
                 // Get the absolute path of file f
                 String absolute = myObj.getAbsolutePath();
                 System.out.println(absolute);
@@ -168,7 +168,7 @@ public class JobDetails implements ActionListener {
 
                 // just writing
                 try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-                        new FileOutputStream("src/db/jobs.txt"), "utf-8"))) {
+                        new FileOutputStream("NewCarpoolUnified/src/db/jobs.txt"), "utf-8"))) {
                     writer.write(content + userEntry);
 
                     // using socket for client/server, here would be client

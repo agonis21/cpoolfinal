@@ -87,7 +87,7 @@ public class VehicleRegistration implements ActionListener {
             String content = "";
             // just reading and saving
             try {
-                File myObj = new File("src/db/" + "vehicle.txt");
+                File myObj = new File("NewCarpoolUnified/src/db/" + "vehicle.txt");
                 // Get the absolute path of file f
                 String absolute = myObj.getAbsolutePath();
                 System.out.println(absolute);
@@ -111,7 +111,7 @@ public class VehicleRegistration implements ActionListener {
 
                 // just writing
                 try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-                        new FileOutputStream("src/db/vehicle.txt"), "utf-8"))) {
+                        new FileOutputStream("NewCarpoolUnified/src/db/vehicle.txt"), "utf-8"))) {
                     writer.write(content + vehicleEntry);
 
                 } catch (FileNotFoundException ex) {

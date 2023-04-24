@@ -2,16 +2,18 @@ import java.io.*;
 import java.net.*;
 import java.util.ArrayList;
 
-public class SemClient implements Runnable {
+public class SemClient extends ClientVCC implements Runnable {
     private Thread t;
     private String threadName;
 
 
     String requestDetails;
     public SemClient(){
-
+        super();
     }
     public SemClient(String request) throws IOException, ClassNotFoundException {
+        super();
+
         this.requestDetails = request;
         this.threadName = this.requestDetails;
 
@@ -55,6 +57,7 @@ public class SemClient implements Runnable {
             out.writeObject(this.requestDetails);
             Object serverResponse = in.readObject();
             System.out.println("Received response from server: " + serverResponse.toString());
+            super.updateStatus( serverResponse.toString());
 
             in.close();
             out.close();
