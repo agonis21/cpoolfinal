@@ -9,11 +9,11 @@ public class VehicleDBAccess {
         DBConnection.init("carpool");
     }
 
-    public static Boolean insert(Vehicle vehicle) throws SQLException {
+    public static Boolean insert(Vehicle vehicle) throws SQLException{
 
         conn = DBConnection.getMyConnection();
 
-        String query = "INSERT INTO vehicle(plateNumber,stateRegistered,year,make,model,created,userID,vehicleId) VALUES(?,?,?,?,?,current_timestamp(), ?,?);";
+        String query = "INSERT INTO vehicle(plateNumber,stateRegistered,year,make,model,created,userID) VALUES(?,?,?,?,?,current_timestamp(), ?);";
         PreparedStatement stmt = conn.prepareStatement(query);
 
         stmt.setString(1, vehicle.getPlateNumber());
@@ -22,7 +22,6 @@ public class VehicleDBAccess {
         stmt.setString(4,vehicle.getMake());
         stmt.setString(5,vehicle.getModel());
         stmt.setInt(6,vehicle.getUserId());
-        stmt.setInt(7,vehicle.getVehicleId());
 
         int result = stmt.executeUpdate();
         if(result ==0)
@@ -49,7 +48,7 @@ public class VehicleDBAccess {
             Timestamp timestamp = rs.getTimestamp("created");
             int userID = rs.getInt("userID");
             int vehicleId= rs.getInt("vehicleId");
-            Vehicle vehicle = new Vehicle(userID,vehicleId,make,model,year,plateNumber,stateRegistered);
+            Vehicle vehicle = new Vehicle(vehicleId,userID,make,model,year,plateNumber,stateRegistered);
             return vehicle;
         }
         else return null;
