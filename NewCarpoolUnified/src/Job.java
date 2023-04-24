@@ -23,6 +23,7 @@ public class Job implements Serializable {
     // jobCompletiontime needs to be added
 
     int redundancy;
+
     public int getUserId(){return this.userId;}
     public int getJobId(){return this.jobId;}
     public String getJobType(){return this.jobType;}
