@@ -1,3 +1,6 @@
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -21,6 +24,9 @@ public class Server extends AdminVCC implements Runnable{
     static DataOutputStream outputStream;
     static Requests recieved;
     private boolean approved;
+
+    ObjectOutputStream out;
+
     String messageIn = "";
     String messageOut = "";
     public Server(){
@@ -33,6 +39,21 @@ public class Server extends AdminVCC implements Runnable{
         System.out.println("Creating " +  threadName );
 
         //super.updateRequestInfo("dfafdafdsafdsf");
+
+        super.AcceptButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                isAccepted(true);
+                respond();
+            }
+        });
+        super.DeclineButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                isAccepted(false);
+                respond();
+            }
+        });
     }
 
     public boolean isAccepted(Boolean approved){
@@ -52,7 +73,7 @@ public class Server extends AdminVCC implements Runnable{
             System.out.println("client is connected!");
 
 
-            ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
+            out = new ObjectOutputStream(socket.getOutputStream());
             ObjectInputStream in = new ObjectInputStream(socket.getInputStream());
 //be able to take multiple messages in while loop
             Object inputObject;
@@ -60,7 +81,17 @@ public class Server extends AdminVCC implements Runnable{
                 System.out.println("Received message from client: " + inputObject.toString());
                 super.updateRequestInfo(inputObject.toString()); //takes userEntry
 
-                out.writeObject("Server received message: " + inputObject.toString());
+                int result = super.showPopUp();
+
+                if(result == JOptionPane.YES_OPTION){
+                    out.writeObject("Accepted");
+                }else if (result == JOptionPane.NO_OPTION){
+                    out.writeObject("Rejected");
+                }else {
+                    out.writeObject("Undetermined");
+                }
+
+
                 super.updateRequestInfo(inputObject.toString());
 
             }
@@ -132,7 +163,11 @@ public class Server extends AdminVCC implements Runnable{
             } else {
                 messageOut = "Your request has been rejected.";
             }
-            outputStream.writeUTF(messageOut);
+
+            System.out.println("RESSSSS");
+            out.writeObject(messageOut);
+
+            //outputStream.writeUTF(messageOut);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
