@@ -4,6 +4,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.sql.SQLException;
 
 public class Server extends AdminVCC {
     public String threadName;
@@ -83,7 +84,7 @@ public class Server extends AdminVCC {
                     outputStream.writeObject("Server response: " + object.toString());
                     outputStream.flush();
                 }
-            } catch (IOException | ClassNotFoundException e) {
+            } catch (IOException | ClassNotFoundException | SQLException e) {
                 e.printStackTrace();
             } finally {
                 try {
@@ -108,14 +109,35 @@ public class Server extends AdminVCC {
         }
     }
 
-    private void saveEntryToDatabase(String entry) {
+    private void saveEntryToDatabase(String entry) throws SQLException {
         String entryType = determineEntryType(entry);
 
         if (entryType == "job"){
+            String[] jobArray = entry.split(",");
 
-            //JobDBAccess.insert(dummyJob);
+            int jobId = Integer.valueOf(jobArray[2]);
+            int userID = Integer.valueOf(jobArray[1]);
+            String jobType = jobArray[3];
+            String jobDuration = jobArray[4];
+            String deadline = jobArray[5];
+
+
+            Job dummyJob = new Job(jobId,userID,jobType,deadline,jobDuration);
+            JobDBAccess.insert(dummyJob);
         } else {
-            //VehicleDBAccess.insert(dummyVehicle);
+
+            String[] vehicleArray = entry.split(",");
+
+            int userId= Integer.valueOf(vehicleArray[1]);
+            String make = vehicleArray[4];
+            String model= vehicleArray[5];
+            int year = Integer.valueOf(vehicleArray[6]);
+            String plateNum = vehicleArray[7];
+            String stateReg = vehicleArray[8];
+
+            Vehicle dummyVehicle = new Vehicle(userId,make,model,year,plateNum,stateReg);
+
+            VehicleDBAccess.insert(dummyVehicle);
         }
 
         System.out.println("Successfully saved to database!");

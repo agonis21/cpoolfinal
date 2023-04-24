@@ -78,7 +78,7 @@ public class VehicleRegistration implements ActionListener {
             String stateReg = StateTF.getText();
             String timeofReg = String.valueOf(LocalDateTime.now());
 
-            String vehicleEntry = timeofReg+","+user.getUserID()+","+carmake+","+carmodel+","+caryear+","+carplateNum+","+stateReg;
+            String vehicleEntry = timeofReg+","+user.getUserID()+","+"null"+","+"null"+","+carmake+","+carmodel+","+caryear+","+carplateNum+","+stateReg;
 
             //String vehicleEntry = timeofReg+","+userID+","+VIN+","+carmake+","+carmodel+","+caryear+","+carplateNum+","+stateReg;
             System.out.println(vehicleEntry);
@@ -148,21 +148,21 @@ public class VehicleRegistration implements ActionListener {
                 String stateRegistered = StateTF.getText();
 
                 Vehicle dummyVehicle = new Vehicle(user.getUserID(),make,model,year,plateNum,stateRegistered);
-                try {
-
-                    //CLIENT SERVER GOES HERE INSTEAD OF DIRECT INSERT
-
-                    if(VehicleDBAccess.insert(dummyVehicle))
-                        user.setVehicle(dummyVehicle);
-                    user.setIsDonor(true);
-                } catch (SQLException ex) {
-                    ex.printStackTrace();
-                }
+//                try {
+//
+//                    //CLIENT SERVER GOES HERE INSTEAD OF DIRECT INSERT
+//
+//                    if(VehicleDBAccess.insert(dummyVehicle))
+//                        user.setVehicle(dummyVehicle);
+//                    user.setIsDonor(true);
+//                } catch (SQLException ex) {
+//                    ex.printStackTrace();
+//                }
                 //user.setVehicle(dummyVehicle);
                 //user.setIsDonor(true);
-                HowLong howLongPage = new HowLong(user);
-                System.out.println("VREG");
-                frame.dispose();
+//                HowLong howLongPage = new HowLong(user);
+//                System.out.println("VREG");
+//                frame.dispose();
 
             }
         }

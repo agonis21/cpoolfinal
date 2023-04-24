@@ -130,6 +130,14 @@ public class JobDetails implements ActionListener {
             System.out.println(userEntry);
             //System.out.println("Time of Submission:"+ LocalDateTime.now());
 
+
+//            Job dummyJob = new Job(jobID,userID,jobType,deadline,duration);
+//            try {
+//                JobDBAccess.insert(dummyJob);
+//            } catch (SQLException ex) {
+//                ex.printStackTrace();
+//            }
+
             try {
                 SemClient sc1 = new SemClient(userEntry);
             } catch (IOException ex) {
@@ -139,12 +147,8 @@ public class JobDetails implements ActionListener {
             }
 
 
-            Job dummyJob = new Job(jobID,userID,jobType,deadline,duration);
-            try {
-                JobDBAccess.insert(dummyJob);
-            } catch (SQLException ex) {
-                ex.printStackTrace();
-            }
+
+
 
 
 
