@@ -139,12 +139,17 @@ public class JobDetails implements ActionListener {
             }
 
             try {
-                SemClient sccc1 = new SemClient(userEntry);
+                SemClient sc1 = new SemClient(userEntry);
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             } catch (ClassNotFoundException ex) {
                 throw new RuntimeException(ex);
             }
+
+
+
+
+
 
 
 

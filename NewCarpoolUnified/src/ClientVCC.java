@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ClientVCC {
     JFrame frame = new JFrame("Client Cloud Controller");
@@ -16,10 +18,25 @@ public class ClientVCC {
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
+
+        closeWindowButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frame.dispose();
+            }
+        });
     }
 
     public void updateStatus(String text){
         this.status_label.setText(text);
     }
 
+    //@Override
+    public void actionPerformed(ActionEvent e){
+        Object source = e.getSource();
+
+        if (source == closeWindowButton){
+            frame.dispose();
+        }
+    }
 }

@@ -84,6 +84,14 @@ public class VehicleRegistration implements ActionListener {
             System.out.println(vehicleEntry);
             System.out.println("Time of Registration:"+ LocalDateTime.now());
 
+            try {
+                SemClient ve1 = new SemClient(vehicleEntry);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            } catch (ClassNotFoundException ex) {
+                throw new RuntimeException(ex);
+            }
+
             String content = "";
             // just reading and saving
             try {

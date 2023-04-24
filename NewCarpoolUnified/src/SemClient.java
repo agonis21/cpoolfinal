@@ -30,7 +30,7 @@ public class SemClient extends ClientVCC implements Runnable {
     }
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        SemClient sc1 = new SemClient("dsadas");
+
     }
 
     @Override
@@ -45,15 +45,20 @@ public class SemClient extends ClientVCC implements Runnable {
             ObjectInputStream in = new ObjectInputStream(socket.getInputStream());
 
             BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
-    //        String userInput;
-    //        while ((userInput = stdIn.readLine()) != null) {
-    //            ArrayList<String> str = new ArrayList<String>();
-    //
-    //            out.writeObject(userInput);
-    //            Object serverResponse = in.readObject();
-    //            System.out.println("Received response from server: " + serverResponse.toString());
-    //        }
+            String userInput;
+            boolean flag = true;
 
+//            while ((userInput = stdIn.readLine()) != null) {
+//                ArrayList<String> str = new ArrayList<String>();
+//
+//                out.writeObject(userInput);
+//                Object serverResponse = in.readObject();
+//                System.out.println("Received response from server: " + serverResponse.toString());
+//
+//                flag = false;
+//            }
+
+            System.out.println(":" + this.requestDetails);
             out.writeObject(this.requestDetails);
             Object serverResponse = in.readObject();
             System.out.println("Received response from server: " + serverResponse.toString());
