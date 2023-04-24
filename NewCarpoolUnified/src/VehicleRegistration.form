@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="VehicleRegistration">
+  <grid id="27dc6" binding="back" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="-103" width="1000" height="894"/>
+    </constraints>
+    <properties>
+      <minimumSize width="-1" height="-1"/>
+      <preferredSize width="640" height="640"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="e955e" binding="BackgroundPanel" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="640" height="640"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16047550"/>
+          <preferredSize width="640" height="480"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <vspacer id="f7dec">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <grid id="57523" binding="Workspace" layout-manager="GridLayoutManager" row-count="21" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="2" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="300" height="450"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-13942191"/>
+              <font name="DialogInput" size="18"/>
+              <foreground color="-5720122"/>
+            </properties>
+            <border type="line">
+              <color color="-5720122"/>
+            </border>
+            <children>
+              <component id="8a351" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-5720122"/>
+                  <font name="Segoe UI Semibold" size="24"/>
+                  <foreground color="-5720122"/>
+                  <text value="Register Your Vehicle"/>
+                </properties>
+              </component>
+              <component id="95ed8" class="javax.swing.JTextField" binding="MakeTF">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15854049"/>
+                  <caretColor color="-5720122"/>
+                  <disabledTextColor color="-5720122"/>
+                  <dragEnabled value="true"/>
+                  <font name="DialogInput" size="16"/>
+                  <foreground color="-5720122"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="79cf2" class="javax.swing.JLabel" binding="MakeLabel">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="8" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Trebuchet MS" size="14"/>
+                  <foreground color="-5720122"/>
+                  <text value="Make:"/>
+                </properties>
+              </component>
+              <component id="f87d1" class="javax.swing.JLabel" binding="ModelLabel">
+                <constraints>
+                  <grid row="8" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="8" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Trebuchet MS" size="14"/>
+                  <foreground color="-5720122"/>
+                  <text value="Model:"/>
+                </properties>
+              </component>
+              <component id="618ef" class="javax.swing.JButton" binding="registerButton">
+                <constraints>
+                  <grid row="19" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="25"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-14051391"/>
+                  <borderPainted value="true"/>
+                  <font name="Trebuchet MS" size="18"/>
+                  <foreground color="-920846"/>
+                  <requestFocusEnabled value="false"/>
+                  <text value="Register"/>
+                </properties>
+              </component>
+              <vspacer id="c6d46">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="95589">
+                <constraints>
+                  <grid row="20" column="1" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="64b4d" class="javax.swing.JLabel" binding="ConfirmPasswordLabel">
+                <constraints>
+                  <grid row="12" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="8" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Trebuchet MS" size="14"/>
+                  <foreground color="-5720122"/>
+                  <text value="Plate Number:"/>
+                </properties>
+              </component>
+              <vspacer id="5fd3">
+                <constraints>
+                  <grid row="18" column="1" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="19866" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="14" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="8" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Trebuchet MS" size="14"/>
+                  <foreground color="-5720122"/>
+                  <text value="State Registered:"/>
+                </properties>
+              </component>
+              <component id="26cef" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="16" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="8" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Trebuchet MS" size="14"/>
+                  <foreground color="-5720122"/>
+                  <text value="Password:"/>
+                </properties>
+              </component>
+              <component id="989ab" class="javax.swing.JPasswordField" binding="PwordTF">
+                <constraints>
+                  <grid row="17" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15854049"/>
+                  <caretColor color="-5720122"/>
+                  <disabledTextColor color="-5720122"/>
+                  <font name="DialogInput" size="16"/>
+                  <foreground color="-5720122"/>
+                </properties>
+              </component>
+              <component id="849e2" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="10" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="8" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Trebuchet MS" size="14"/>
+                  <foreground color="-5720122"/>
+                  <text value="Year:"/>
+                </properties>
+              </component>
+              <component id="b666a" class="javax.swing.JTextField" binding="ModelTF">
+                <constraints>
+                  <grid row="9" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15854049"/>
+                  <caretColor color="-5720122"/>
+                  <disabledTextColor color="-5720122"/>
+                  <dragEnabled value="true"/>
+                  <font name="DialogInput" size="16"/>
+                  <foreground color="-5720122"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="8b04" class="javax.swing.JTextField" binding="YearTF">
+                <constraints>
+                  <grid row="11" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15854049"/>
+                  <caretColor color="-5720122"/>
+                  <disabledTextColor color="-5720122"/>
+                  <dragEnabled value="true"/>
+                  <font name="DialogInput" size="16"/>
+                  <foreground color="-5720122"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="3fbd8" class="javax.swing.JTextField" binding="PlateTF">
+                <constraints>
+                  <grid row="13" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15854049"/>
+                  <caretColor color="-5720122"/>
+                  <disabledTextColor color="-5720122"/>
+                  <dragEnabled value="true"/>
+                  <font name="DialogInput" size="16"/>
+                  <foreground color="-5720122"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="37635" class="javax.swing.JTextField" binding="StateTF">
+                <constraints>
+                  <grid row="15" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15854049"/>
+                  <caretColor color="-5720122"/>
+                  <disabledTextColor color="-5720122"/>
+                  <dragEnabled value="true"/>
+                  <font name="DialogInput" size="16"/>
+                  <foreground color="-5720122"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <vspacer id="3c1f4">
+                <constraints>
+                  <grid row="19" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="39a85">
+                <constraints>
+                  <grid row="19" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="6957a" class="javax.swing.JLabel" binding="UserIDLabel">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="7" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Trebuchet MS" size="14"/>
+                  <foreground color="-5720122"/>
+                  <text value="User Id:"/>
+                </properties>
+              </component>
+              <component id="7adad" class="javax.swing.JTextField" binding="UserId">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15854049"/>
+                  <caretColor color="-5720122"/>
+                  <disabledTextColor color="-5720122"/>
+                  <dragEnabled value="true"/>
+                  <font name="DialogInput" size="16"/>
+                  <foreground color="-5720122"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="37fcc" class="javax.swing.JLabel" binding="VehicleIdLabel">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="7" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Trebuchet MS" size="14"/>
+                  <foreground color="-5720122"/>
+                  <text value="Vehicle Id:"/>
+                </properties>
+              </component>
+              <component id="6a823" class="javax.swing.JTextField" binding="VehicleIdText">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15854049"/>
+                  <caretColor color="-5720122"/>
+                  <disabledTextColor color="-5720122"/>
+                  <dragEnabled value="true"/>
+                  <font name="DialogInput" size="16"/>
+                  <foreground color="-5720122"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="c6ea1" binding="Header" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-15854049"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <toolbar id="cbf1f" binding="Navbar">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-10518631"/>
+                  <floatable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="f3413" class="javax.swing.JButton" binding="HomeButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-10518631"/>
+                      <borderPainted value="false"/>
+                      <focusable value="false"/>
+                      <font name="Trebuchet MS" size="18"/>
+                      <foreground color="-920846"/>
+                      <iconTextGap value="8"/>
+                      <preferredSize width="100" height="40"/>
+                      <requestFocusEnabled value="false"/>
+                      <text value="Home"/>
+                    </properties>
+                  </component>
+                  <component id="f13a9" class="javax.swing.JButton" binding="TutorialButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-10518631"/>
+                      <borderPainted value="false"/>
+                      <focusPainted value="false"/>
+                      <font name="Trebuchet MS" size="18"/>
+                      <foreground color="-920846"/>
+                      <iconTextGap value="8"/>
+                      <preferredSize width="100" height="40"/>
+                      <requestFocusEnabled value="false"/>
+                      <text value="Tutorial"/>
+                    </properties>
+                  </component>
+                  <component id="5295d" class="javax.swing.JButton" binding="AboutButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-10518631"/>
+                      <borderPainted value="false"/>
+                      <focusPainted value="false"/>
+                      <font name="Trebuchet MS" size="18"/>
+                      <foreground color="-920846"/>
+                      <preferredSize width="100" height="40"/>
+                      <requestFocusEnabled value="false"/>
+                      <text value="About"/>
+                    </properties>
+                  </component>
+                  <hspacer id="e644c">
+                    <constraints/>
+                  </hspacer>
+                  <component id="7f7bf" class="javax.swing.JButton" binding="AccountButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-10518631"/>
+                      <borderPainted value="false"/>
+                      <focusPainted value="false"/>
+                      <font name="Trebuchet MS" size="18"/>
+                      <foreground color="-920846"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="11"/>
+                      <iconTextGap value="8"/>
+                      <preferredSize width="100" height="40"/>
+                      <requestFocusEnabled value="false"/>
+                      <text value="Account"/>
+                    </properties>
+                  </component>
+                </children>
+              </toolbar>
+              <component id="b74ce" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="CPtextLogo-01 (1).png"/>
+                  <text value=" "/>
+                </properties>
+              </component>
+              <vspacer id="d7328">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="40593">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <vspacer id="927ed">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

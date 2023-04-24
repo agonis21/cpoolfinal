@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="About">
+  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="598" height="475"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="45e4d" binding="BackgroundPanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16047550"/>
+          <enabled value="true"/>
+          <preferredSize width="640" height="480"/>
+          <requestFocusEnabled value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="5b1f2" binding="Header" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="530" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-15854049"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <toolbar id="f779c" binding="Navbar">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-10518631"/>
+                  <floatable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="3d6f3" class="javax.swing.JButton" binding="HomeButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-10518631"/>
+                      <borderPainted value="false"/>
+                      <focusable value="false"/>
+                      <font name="Trebuchet MS" size="18"/>
+                      <foreground color="-920846"/>
+                      <iconTextGap value="8"/>
+                      <preferredSize width="100" height="40"/>
+                      <requestFocusEnabled value="false"/>
+                      <text value="Home"/>
+                    </properties>
+                  </component>
+                  <component id="aecf" class="javax.swing.JButton" binding="TutorialButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-10518631"/>
+                      <borderPainted value="false"/>
+                      <focusPainted value="false"/>
+                      <font name="Trebuchet MS" size="18"/>
+                      <foreground color="-920846"/>
+                      <iconTextGap value="8"/>
+                      <preferredSize width="100" height="40"/>
+                      <requestFocusEnabled value="false"/>
+                      <text value="Tutorial"/>
+                    </properties>
+                  </component>
+                  <component id="f7268" class="javax.swing.JButton" binding="AboutButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-10518631"/>
+                      <borderPainted value="false"/>
+                      <focusPainted value="false"/>
+                      <font name="Trebuchet MS" size="18"/>
+                      <foreground color="-920846"/>
+                      <preferredSize width="100" height="40"/>
+                      <requestFocusEnabled value="false"/>
+                      <text value="About"/>
+                    </properties>
+                  </component>
+                  <hspacer id="ff0bd">
+                    <constraints/>
+                  </hspacer>
+                  <component id="ddfaf" class="javax.swing.JButton" binding="AccountButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-10518631"/>
+                      <borderPainted value="false"/>
+                      <focusPainted value="false"/>
+                      <font name="Trebuchet MS" size="18"/>
+                      <foreground color="-920846"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="11"/>
+                      <iconTextGap value="8"/>
+                      <preferredSize width="100" height="40"/>
+                      <requestFocusEnabled value="false"/>
+                      <text value="Account"/>
+                    </properties>
+                  </component>
+                  <component id="e6f9f" class="javax.swing.JButton" binding="logOutButton" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <font name="Trebuchet MS" size="18" style="0"/>
+                      <foreground color="-4121312"/>
+                      <text value="Log Out"/>
+                    </properties>
+                  </component>
+                </children>
+              </toolbar>
+              <component id="bd9a0" class="javax.swing.JLabel" binding="logoLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="CPtextLogo-01 (1).png"/>
+                  <text value=" "/>
+                </properties>
+              </component>
+              <vspacer id="f91b6">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="66067" binding="TextPanel" layout-manager="GridLayoutManager" row-count="12" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <autoscrolls value="false"/>
+              <background color="-16047550"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="c70e0" class="javax.swing.JLabel" binding="AboutUSLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Microsoft YaHei UI Light" size="24" style="0"/>
+                  <foreground color="-5720122"/>
+                  <text value="About Us"/>
+                </properties>
+              </component>
+              <vspacer id="d20ca">
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="1bb57" class="javax.swing.JLabel" binding="carpoolUsersLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-5720122"/>
+                  <font name="Inconsolata"/>
+                  <foreground color="-5720122"/>
+                  <text value="At Carpool, we have two types of users: "/>
+                </properties>
+              </component>
+              <component id="dc086" class="javax.swing.JLabel" binding="DonorsLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-5720122"/>
+                  <font name="Unispace" size="16"/>
+                  <foreground color="-5720122"/>
+                  <text value="Donors:"/>
+                </properties>
+              </component>
+              <vspacer id="7da71">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="e7150" class="javax.swing.JLabel" binding="freeParkingLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Inconsolata"/>
+                  <foreground color="-5720122"/>
+                  <text value="Donors will receive free parking in exchange for the use"/>
+                </properties>
+              </component>
+              <component id="f0cb" class="javax.swing.JLabel" binding="carsComputerLabel">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Inconsolata"/>
+                  <foreground color="-5720122"/>
+                  <text value="of their car's computer while they're away."/>
+                </properties>
+              </component>
+              <component id="6a6ae" class="javax.swing.JLabel" binding="RentersLabel">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-5720122"/>
+                  <font name="Unispace" size="16"/>
+                  <foreground color="-5720122"/>
+                  <text value="Renters:"/>
+                </properties>
+              </component>
+              <vspacer id="4dfd6">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="5808f" class="javax.swing.JLabel" binding="submitInformationLabel">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Inconsolata"/>
+                  <foreground color="-5720122"/>
+                  <text value="Renters will submit information regarding the job they need completed"/>
+                </properties>
+              </component>
+              <component id="58ce7" class="javax.swing.JLabel" binding="filesAndJobLabel">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Inconsolata"/>
+                  <foreground color="-5720122"/>
+                  <text value="such as files and type of job. Using the pool of donated computers,"/>
+                </properties>
+              </component>
+              <component id="b2d8c" class="javax.swing.JLabel" binding="poolOfResourcesLabel">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Inconsolata"/>
+                  <foreground color="-5720122"/>
+                  <text value=" these jobs will be completed."/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <vspacer id="8e991">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="de605">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

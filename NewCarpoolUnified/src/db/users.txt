@@ -1,0 +1,10 @@
+userID,username,password,fname,lname,isDonor,vehicle,hasActiveDonation
+2147,John2000,flame,John,Smith,true,toyota,true
+2148,ReginaF,reggie,Regina,Fitzpatrick,false,null,false
+2149,LucyHale,liar,Lucy,Hale,true,honda,true
+2151,ReeseP,reeses,Reese,George,false,null,false
+2152,Matt99,surfer,Matt,Park,true,toyota,true
+2153,KatnissE,fire,Katniss,Everdeen,true,mitsubishi,true
+2154,PeetaM,bread,Peeta,Mellark,false,null,false
+2155,SidneyS,sweet,Sidney,Smith,true,mercedes,true
+2156,NickMill,bar,Nick,Miller,false,null,false

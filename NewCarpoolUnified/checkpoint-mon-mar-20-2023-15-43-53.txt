@@ -1,0 +1,48 @@
+CARPOOL (c) 2023
+Created By: Asm, Steven, Maya, Maria, Fairooz
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+Time of Capture: Mon, Mar 20 2023 15:43:53
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+USERS:
+0. userID,username,password,fname,lname,isDonor,vehicle,hasActiveDonation
+1. 2147,John2000,flame,John,Smith,true,toyota,true
+2. 2148,ReginaF,reggie,Regina,Fitzpatrick,false,null,false
+3. 2149,LucyHale,liar,Lucy,Hale,true,honda,true
+4. 2151,ReeseP,reeses,Reese,George,false,null,false
+5. 2152,Matt99,surfer,Matt,Park,true,toyota,true
+6. 2153,KatnissE,fire,Katniss,Everdeen,true,mitsubishi,true
+7. 2154,PeetaM,bread,Peeta,Mellark,false,null,false
+8. 2155,SidneyS,sweet,Sidney,Smith,true,mercedes,true
+9. 2156,NickMill,bar,Nick,Miller,false,null,false
+Total number of jobs: 10
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+VEHICLES:
+0. userID,VIN,make,model,year,plateNumber,stateRegistered
+1. 2147,10392,toyota,corolla,2013,LD34D,NY
+2. 2149,10293,honda,civic,2016,R45TT67,PA
+3. 2153,19372,mitsubishi,outlander,2019,PJ3K5,NJ
+4. 2155,19283,mercedes,GLE,2023,FY14H,VT
+5. 2152,10293,toyota,corolla,2010,M33LK5,NY
+6. 9158,1118,toyota,corolla,2007,RJ2k4K,NY
+7. 6168,58254,Toyota,Corolla,2009,NDAFSN,NY
+Total number of jobs: 8
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+JOBS:
+0. userID,jobID,JobType,JobDeadline,JobDuration
+1. 2148,200,Conversion,20,10
+2. 2148,201,Reformatting,40,20
+3. 2151,202,Rendering,35,30
+4. 2154,203,Reformatting,35,40
+5. 2156,204,Processing,90,50
+6. 2151,202,Rendering,35,30
+7. 2151,202,Rendering,35,30
+8. 2154,203,Reformatting,35,40
+9. 2156,204,Processing,90,50
+10. 4861,7615,Rendering,44,33
+11. 982,1479,Reformatting,60,10
+12. 8816,2289,Processing,40,20
+13. 2466,6914,Conversion,60,60
+14. 3273,3805,Conversion,120,120
+15. 493,2882,Rendering,120,120
+Total number of jobs: 16
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
