@@ -17,7 +17,7 @@ public class JobDBAccess {
 
         conn = DBConnection.getMyConnection();
 
-        String query = "INSERT INTO job(userID,jobId,jobType,jobDeadline,jobDuration, timestamp) VALUES(?,?,?,?,?, current_timestamp());";
+        String query = "INSERT INTO job(userID,jobId,jobType,jobDeadline,duration, created) VALUES(?,?,?,?,?, current_timestamp());";
         PreparedStatement stmt = conn.prepareStatement(query);
 
         stmt.setInt(1, job.getUserId());

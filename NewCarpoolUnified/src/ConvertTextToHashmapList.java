@@ -13,7 +13,7 @@ public class ConvertTextToHashmapList {
     public ConvertTextToHashmapList(String filename) throws IOException {
 
         try {
-            File myObj = new File("src/db/" + filename);
+            File myObj = new File("NewCarpoolUnified/src/db/" + filename);
             // Get the absolute path of file f
             String absolute = myObj.getAbsolutePath();
             System.out.println(absolute);
