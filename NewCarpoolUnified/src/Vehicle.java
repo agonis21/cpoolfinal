@@ -11,19 +11,19 @@ public class Vehicle implements Serializable {
     public String stateRegistered;
 
 
-    public Vehicle(DummyUser user, int vehicleId, String make, String model, int year, String plateNumber, String stateRegistered)
-    {
-        this.make = make;
-        this.model = model;
-        this.year = year;
-        this.plateNumber = plateNumber;
-        this.stateRegistered = stateRegistered;
-        this.vehicleId=vehicleId;
-
-    }
+//    public Vehicle(DummyUser user, int vehicleId, String make, String model, int year, String plateNumber, String stateRegistered)
+//    {
+//        this.make = make;
+//        this.model = model;
+//        this.year = year;
+//        this.plateNumber = plateNumber;
+//        this.stateRegistered = stateRegistered;
+//        this.vehicleId=vehicleId;
+//
+//    }
 
     //DB constructor
-    public Vehicle(int userID, int vehicleId, String make, String model, int year, String plateNumber, String stateRegistered)
+    public Vehicle(int userID,int vehicleId, String make, String model, int year, String plateNumber, String stateRegistered)
     {
         this.make = make;
         this.model = model;
@@ -31,7 +31,19 @@ public class Vehicle implements Serializable {
         this.plateNumber = plateNumber;
         this.stateRegistered = stateRegistered;
         this.userId = userID;
-        this.vehicleId=vehicleId;
+        this.vehicleId = vehicleId;
+
+    }
+
+    public Vehicle(int userID, String make, String model, int year, String plateNumber, String stateRegistered)
+    {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.plateNumber = plateNumber;
+        this.stateRegistered = stateRegistered;
+        this.userId = userID;
+        this.vehicleId = vehicleId;
 
     }
 
