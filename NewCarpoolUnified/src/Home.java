@@ -71,8 +71,11 @@ public class Home implements ActionListener {
             }
             else if(user.getIsDonor() == true)
             {
-                HowLong howLongPage = new HowLong(user);
+//                HowLong howLongPage = new HowLong(user);
+//                frame.dispose();
+                VehicleRegistration registration = new VehicleRegistration(user);
                 frame.dispose();
+
             }
             else if(user.getIsDonor()==false)
             {

@@ -208,7 +208,7 @@ public class AdminVCC {
     String[] vecArr = text.split(",");
     //update labels based on position each category of array
     this.userIDV.setText(vecArr[2]);
-    this.VechID.setText(vecArr[3]);
+    this.VechID.setText(vecArr[2]);
     this.Make.setText(vecArr[4]);
     this.Model.setText(vecArr[5]);
     this.Year.setText(vecArr[6]);

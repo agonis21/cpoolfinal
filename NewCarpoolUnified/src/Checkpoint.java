@@ -77,7 +77,7 @@ public class Checkpoint {
 
         //loop through users retrieved from database in the future
         try {
-            File myObj = new File("src/db/" + "users.txt");
+            File myObj = new File("NewCarpoolUnified/src/db/" + "users.txt");
             // Get the absolute path of file f
             String absolute = myObj.getAbsolutePath();
             System.out.println(absolute);
@@ -96,7 +96,7 @@ public class Checkpoint {
             }
 
             this.TOTAL_USERS = i;
-            this.USERS_STRING += "Total number of jobs: " + this.TOTAL_USERS;
+            this.USERS_STRING += "NewCarpoolUnified/Total number of users: " + this.TOTAL_USERS;
             this.USERS_STRING += "\n";
 
         } catch (FileNotFoundException e) {
@@ -117,7 +117,7 @@ public class Checkpoint {
 
 
         try {
-            File myObj = new File("src/db/" + "vehicle.txt");
+            File myObj = new File("NewCarpoolUnified/src/db/" + "vehicle.txt");
             // Get the absolute path of file f
             String absolute = myObj.getAbsolutePath();
             System.out.println(absolute);
@@ -136,7 +136,7 @@ public class Checkpoint {
             }
 
             this.TOTAL_VEHICLES = i;
-            this.VEHICLES_STRING += "Total number of jobs: " + this.TOTAL_VEHICLES;
+            this.VEHICLES_STRING += "Total number of vehicles: " + this.TOTAL_VEHICLES;
             this.VEHICLES_STRING += "\n";
 
         } catch (FileNotFoundException e) {
@@ -160,7 +160,7 @@ public class Checkpoint {
 
         //loop through vehicles retrieved from database in the future
         try {
-            File myObj = new File("src/db/" + "jobs.txt");
+            File myObj = new File("NewCarpoolUnified/src/db/" + "jobs.txt");
             // Get the absolute path of file f
             String absolute = myObj.getAbsolutePath();
             System.out.println(absolute);
@@ -259,8 +259,6 @@ public class Checkpoint {
 
     public static void main(String[] args) throws IOException {
 
-        Checkpoint cp1 = new Checkpoint();
-        cp1.exportFile();
 
     }
 }

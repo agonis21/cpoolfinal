@@ -13,8 +13,8 @@ public class DBConnection {
     private static Connection conn=null;
     private static String dbString = "jdbc:mysql://localhost:3306/";
     private static String userName = "root";
-    private static String password = "CUS725";
-    public static String winflag = "?useSSL=false";
+    private static String password = "1971";
+    public static String winflag = "?useSSL=false&allowPublicKeyRetrieval=true";
     public static String dbname;
 
     /**

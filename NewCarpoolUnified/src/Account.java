@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class Account implements ActionListener {
     JFrame frame = new JFrame("My Account");
@@ -13,7 +14,7 @@ public class Account implements ActionListener {
     private JButton AboutButton;
     private JButton AccountButton;
     private JLabel logoLabel;
-    private JButton terminateJob;
+    private JButton captureCheckpoint;
     private JButton logOutButton;
 
     public Account(DummyUser user)
@@ -32,10 +33,17 @@ public class Account implements ActionListener {
         logOutButton.addActionListener(this);
 
 
-
-
-
-
+        captureCheckpoint.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Checkpoint cp1 = new Checkpoint();
+                try {
+                    cp1.exportFile();
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+        });
     }
 
 
@@ -57,7 +65,7 @@ public class Account implements ActionListener {
             Tutorial tutorialPage = new Tutorial(user);
             frame.dispose();
         }
-        if(source == terminateJob)
+        if(source == captureCheckpoint)
         {
             //may have to change later to a diff page?? cancellation report page?
             Donor terminate = new Donor(user);

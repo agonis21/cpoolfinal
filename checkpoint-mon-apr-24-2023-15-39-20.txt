@@ -1,0 +1,47 @@
+CARPOOL (c) 2023
+Created By: Asm, Steven, Maya, Maria, Fairooz
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+Time of Capture: Mon, Apr 24 2023 15:39:20
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+USERS:
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+VEHICLES:
+0. RegistrationTime,userId,vehicleId,VIN,Make,Model,Year,PlateNumber,stateRegistered
+1. 2023-04-16T07:43:06.653332600,123,333,23665,car,rtw,2019,abc4,nyc
+2. 2023-04-23T02:00:19.047859900,0,456,19891,car,tyto,2019,ujuf,nuc
+3. 2023-04-23T02:06:48.186707600,123,456,50797,yiu,hh,8000,okj,yyx
+4. 2023-04-23T04:36:46.070398700,90,70,92507,ufo,gfg,2029,kjfj,fhj
+5. 2023-04-23T23:12:40.898542500,3393,444,65395,Toyota,Camry,2009,ADF12,NY
+6. 2023-04-23T23:13:32.663941700,3393,444,99696,Toyota,Camry,2009,ADF12,NY
+7. 2023-04-24T02:05:16.584220,2002,3003,29572,Honda,CRV,2012,DMFMS,NY
+8. 2023-04-24T02:08:22.105690,2002,3003,47793,Honda,CRV,2019,EKJDM,NY
+9. 2023-04-24T02:12:56.186184,2002,3003,44541,Honda,CRV,2009,DNSK,NY
+10. 2023-04-24T02:14:17.810567,2002,3003,63125,Honda,CRV,2004,DKGMS,NY
+11. 2023-04-24T03:58:00.245818800,0,Toyota,Camry,1900,NY&daf,NY
+12. 2023-04-24T10:28:53.447552800,0,Toyota,Camry,2010,JFDA,NY
+13. 2023-04-24T10:32:56.367390400,0,Toyota,Corolla,2019,NY123,NY
+14. 2023-04-24T10:33:58.128365600,0,Honda,Civic,2019,NY123,NY
+15. 2023-04-24T10:35:47.733192300,0,Toyota,Corolla,2019,NY123,NY
+16. 2023-04-24T10:36:07.779956800,0,Honda,CRV,2008,NY123,NY
+17. 2023-04-24T12:08:38.694925100,0,Jeep,Compass,2022,LKJ-9898,NY
+18. 2023-04-24T12:46:05.162371500,3,Ford,Explorer,2015,ABC-123,NY
+19. 2023-04-24T12:48:55.076593700,3,Ford,Explorer,2012,ABC-123,NY
+20. 2023-04-24T12:55:39.748677200,3,null,null,Ford,Explorer,2012,ABC-123,NY
+21. 2023-04-24T13:03:23.473872200,3,null,null,Ford,Explorer,2011,ABC-123,NY
+22. 2023-04-24T13:16:56.224175400,4,null,null,Jeep,Compass,2022,JLH-7341,NY
+23. 2023-04-24T13:18:15.040718,4,null,null,Jeep,Gladiator,2022,JLH-5431,NY
+24. 2023-04-24T15:09:07.668937700,4,null,null,Toyota,Corolla,1998,TY-1234,NY
+25. 2023-04-24T15:16:35.396947800,2,null,null,Jeep,Copmass,2022,jhjhjh,NY
+26. 2023-04-24T15:22:44.751890600,3,123,null,Toyota,Corolla,1999,NADFS,NY
+27. 2023-04-24T15:27:38.807529300,4,15,null,sdf,sdf,1987,sdfsdf,ny
+28. 2023-04-24T15:33:13.199004600,3,null,null,Toyota,Camry,12,NY-123,NY
+29. 2023-04-24T15:33:43.119192900,3,null,null,Honda,Civic,1990,NY-123,NY
+Total number of vehicles: 30
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
+JOBS:
+0. JobSubmissionTime,userID,jobID,JobType,JobDeadline,JobDuration, JobCompletionTime
+1. 2023-04-02T14:38:33.901484900,111,222,Conversion,0,0,0
+2. 2023-04-23T23:13:45.602568100,1222,333,Rendering,4444,123,123
+3. 2023-04-23T23:39:04.486115300,100,1200,Conversion,333,222,345
+Total number of jobs: 4
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -

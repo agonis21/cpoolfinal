@@ -77,8 +77,9 @@ public class VehicleRegistration implements ActionListener {
             String carplateNum = PlateTF.getText();
             String stateReg = StateTF.getText();
             String timeofReg = String.valueOf(LocalDateTime.now());
+            String vehicleID = "null";//vehicleField.getText();
 
-            String vehicleEntry = timeofReg+","+user.getUserID()+","+"null"+","+"null"+","+carmake+","+carmodel+","+caryear+","+carplateNum+","+stateReg;
+            String vehicleEntry = timeofReg+","+user.getUserID()+","+vehicleID+","+"null"+","+carmake+","+carmodel+","+caryear+","+carplateNum+","+stateReg;
 
             //String vehicleEntry = timeofReg+","+userID+","+VIN+","+carmake+","+carmodel+","+caryear+","+carplateNum+","+stateReg;
             System.out.println(vehicleEntry);

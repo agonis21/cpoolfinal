@@ -139,7 +139,7 @@
               <text value=""/>
             </properties>
           </component>
-          <component id="ab0f0" class="javax.swing.JButton" binding="terminateJob">
+          <component id="ab0f0" class="javax.swing.JButton" binding="captureCheckpoint">
             <constraints>
               <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -152,7 +152,7 @@
               <iconTextGap value="8"/>
               <preferredSize width="100" height="40"/>
               <requestFocusEnabled value="false"/>
-              <text value="Terminate Job"/>
+              <text value="Capture Checkpoint"/>
               <verticalAlignment value="0"/>
               <verticalTextPosition value="3"/>
             </properties>
